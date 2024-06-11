@@ -79,7 +79,6 @@ console.log(`Usuario: ADM / Senha: 5678 \n${verificarLogin('ADM','5678')}`)
 //Função para calcula a Média das notas (parametroda função é um array)
 function calcularMedia(notas) {
     let soma = 0
-    let cont = 0
     for (let cont = 0; cont < notas.length; cont ++){
         soma = notas[cont] + soma
     }
