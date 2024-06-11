@@ -106,9 +106,16 @@ divFundo.innerHTML += `<p>Idade: 19</p>`;
 divFundo.innerHTML += `<p>Curso: Engenharia de Software</p>`;
 divFundo.innerHTML += `<p>Ano: 2024</p>`;
 
+//Exercicio 8
 
+const texto = "Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos, métodos e técnicas que visam a resolução de problemas."
+posicaoEM =texto.indexOf("em")
+posicaoIA = texto.lastIndexOf("ia")
+posicaoCiencia = texto.indexOf("ciência")
+posicaoMetodos = texto.indexOf("métodos")
 
-
+// Posições das respectivas caracteres pedidas
+console.log(`${posicaoEM} \n ${posicaoIA} \n ${posicaoCiencia} \n ${posicaoMetodos}`)
 
 
 
