@@ -57,7 +57,7 @@ function verificarFaixaEtaria(idade) {
 // Exemplo utilizado na saida foi 25 anos
 console.log(verificarFaixaEtaria(25))
 
-// Exercicio 5
+//Exercicio 5
 
 //Função de verificação
 function verificarLogin(usuario, senha) {
@@ -71,7 +71,6 @@ function verificarLogin(usuario, senha) {
 }
 
 //Passarei duas Saidas uma com o usuario certo e outro errado
-
 console.log(`Usuario: admin / Senha: 1234 \n${verificarLogin('admin','1234')}`)
 console.log(`Usuario: ADM / Senha: 5678 \n${verificarLogin('ADM','5678')}`)
 
@@ -100,11 +99,11 @@ console.log(`Média: ${calcularMedia([7,8,9,10,5,6,7])}`)
 // Exercicio 7
 
 //Salvando o elemento html div em uma variavel através do id
-divFundo = document.getElementById('fundo');
-divFundo.innerHTML = `<p>Nome: Pedro</p>`;
-divFundo.innerHTML += `<p>Idade: 19</p>`;
-divFundo.innerHTML += `<p>Curso: Engenharia de Software</p>`;
-divFundo.innerHTML += `<p>Ano: 2024</p>`;
+divFundo = document.getElementById('fundo')
+divFundo.innerHTML = `<p>Nome: Pedro</p>`
+divFundo.innerHTML += `<p>Idade: 19</p>`
+divFundo.innerHTML += `<p>Curso: Engenharia de Software</p>`
+divFundo.innerHTML += `<p>Ano: 2024</p>`
 
 //Exercicio 8
 
