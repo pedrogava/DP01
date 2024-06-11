@@ -11,13 +11,14 @@ console.log(variavelValor)
 let a = 5 
 let b = 25
 
+// Exemplos de cada uso dos operdaores
 console.log(`a != b: ${a != b}`)
 console.log(`a == b: ${a == b}`)
 console.log(`b >= a: ${b >= a}`)
 console.log(`b<=a: ${b <= a}`)
 
 //Exercicio 3
-
+// função para calcular o IMC
 function calcularIMC(peso, altura) {
     let imc = peso / (altura * altura);
     let mensagem;
@@ -30,4 +31,10 @@ function calcularIMC(peso, altura) {
     }
     return `IMC: ${imc.toFixed(2)} - ${mensagem}`;
 }
-output.innerHTML += `<p>${calcularIMC(70, 1.75)}</p>`;
+
+// Valores utilizados de exemplo 
+//Peso: 70 Altura: 1.75 
+console.log(`${calcularIMC(70, 1.75)}`)
+
+
+
