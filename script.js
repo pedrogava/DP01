@@ -117,5 +117,11 @@ posicaoMetodos = texto.indexOf("métodos")
 // Posições das respectivas caracteres pedidas
 console.log(`${posicaoEM} \n ${posicaoIA} \n ${posicaoCiencia} \n ${posicaoMetodos}`)
 
+//Exercicio 9
 
+// uso do parseFloat para a conversão
+let variavelString = "123.45";
+let variavelFloat = parseFloat(variavelString);
+
+ console.log(`String: ${variavelString} \n Float: ${variavelFloat}`)
 
