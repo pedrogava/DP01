@@ -1,4 +1,5 @@
 // Exercicio 1
+//Variaveis com os valores necessários
 let variavelUndefined;
 const variavelVazia = ''
 const variavelValor = 'Hello World'
@@ -20,16 +21,16 @@ console.log(`b<=a: ${b <= a}`)
 //Exercicio 3
 // função para calcular o IMC
 function calcularIMC(peso, altura) {
-    let imc = peso / (altura * altura);
-    let mensagem;
+    let imc = peso / (altura * altura)
+    let mensagem
     if (imc < 18.5) {
-        mensagem = "Abaixo do peso";
+        mensagem = "Abaixo do peso"
     } else if (imc >= 18.5 && imc <= 24.9) {
-        mensagem = "Peso ideal";
+        mensagem = "Peso ideal"
     } else {
-        mensagem = "Acima do peso";
+        mensagem = "Acima do peso"
     }
-    return `IMC: ${imc.toFixed(2)} - ${mensagem}`;
+    return `IMC: ${imc.toFixed(2)} - ${mensagem}`
 }
 
 // Valores utilizados de exemplo 
@@ -42,15 +43,15 @@ console.log(calcularIMC(70, 1.75))
 function verificarFaixaEtaria(idade) {
     let faixa;
     if (idade <= 12) {
-        faixa = "Criança";
+        faixa = "Criança"
     } else if (idade <= 18) {
-        faixa = "Adolescente";
+        faixa = "Adolescente"
     } else if (idade <= 60) {
-        faixa = "Adulto";
+        faixa = "Adulto"
     } else {
-        faixa = "Idoso";
+        faixa = "Idoso"
     }
-    return `Idade: ${idade} - Faixa etária: ${faixa}`;
+    return `Idade: ${idade} - Faixa etária: ${faixa}`
 }
 
 // Exemplo utilizado na saida foi 25 anos
@@ -58,23 +59,43 @@ console.log(verificarFaixaEtaria(25))
 
 // Exercicio 5
 
+//Função de verificação
 function verificarLogin(usuario, senha) {
-    const usuarioCadastrado = "admin";
-    const senhaCadastrada = "1234";
+    const usuarioCadastrado = "admin"
+    const senhaCadastrada = "1234"
     if (usuario === usuarioCadastrado && senha === senhaCadastrada) {
-        return "Login realizado com sucesso";
+        return "Login realizado com sucesso"
     } else {
-        return "Falha na autenticação";
+        return "Falha na autenticação"
     }
 }
 
-// Passarei duas Saidas uma com o usuario certo e outro errado
+//Passarei duas Saidas uma com o usuario certo e outro errado
 
 console.log(`Usuario: admin / Senha: 1234 \n${verificarLogin('admin','1234')}`)
-
 console.log(`Usuario: ADM / Senha: 5678 \n${verificarLogin('ADM','5678')}`)
 
+//Exercicio 6
 
+//Função para calcula a Média das notas (parametroda função é um array)
+function calcularMedia(notas) {
+    let soma = 0
+    let cont = 0
+    for (let cont = 0; cont < notas.length; cont ++){
+        soma = notas[cont] + soma
+    }
+
+    let media = soma / notas.length
+
+    if (media >= 6){
+        return 'Aprovado'
+    }else{
+        return 'Reprovado'
+    }
+}
+
+// Saida com a média do arry passado como parametro
+console.log(`Média: ${calcularMedia([7,8,9,10,5,6,7])}`)
 
 
 
