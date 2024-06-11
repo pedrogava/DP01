@@ -97,7 +97,14 @@ function calcularMedia(notas) {
 // Saida com a média do arry passado como parametro
 console.log(`Média: ${calcularMedia([7,8,9,10,5,6,7])}`)
 
+// Exercicio 7
 
+//Salvando o elemento html div em uma variavel através do id
+divFundo = document.getElementById('fundo');
+divFundo.innerHTML = `<p>Nome: Pedro</p>`;
+divFundo.innerHTML += `<p>Idade: 19</p>`;
+divFundo.innerHTML += `<p>Curso: Engenharia de Software</p>`;
+divFundo.innerHTML += `<p>Ano: 2024</p>`;
 
 
 
