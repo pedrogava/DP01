@@ -34,7 +34,7 @@ function calcularIMC(peso, altura) {
 
 // Valores utilizados de exemplo 
 //Peso: 70 Altura: 1.75 
-console.log(`${calcularIMC(70, 1.75)}`)
+console.log(calcularIMC(70, 1.75))
 
 // Exercicio 4
 
@@ -56,7 +56,23 @@ function verificarFaixaEtaria(idade) {
 // Exemplo utilizado na saida foi 25 anos
 console.log(verificarFaixaEtaria(25))
 
+// Exercicio 5
 
+function verificarLogin(usuario, senha) {
+    const usuarioCadastrado = "admin";
+    const senhaCadastrada = "1234";
+    if (usuario === usuarioCadastrado && senha === senhaCadastrada) {
+        return "Login realizado com sucesso";
+    } else {
+        return "Falha na autenticação";
+    }
+}
+
+// Passarei duas Saidas uma com o usuario certo e outro errado
+
+console.log(`Usuario: admin / Senha: 1234 \n${verificarLogin('admin','1234')}`)
+
+console.log(`Usuario: ADM / Senha: 5678 \n${verificarLogin('ADM','5678')}`)
 
 
 
