@@ -36,5 +36,35 @@ function calcularIMC(peso, altura) {
 //Peso: 70 Altura: 1.75 
 console.log(`${calcularIMC(70, 1.75)}`)
 
+// Exercicio 4
+
+//Função para verificação da faixa etária em relação a idade
+function verificarFaixaEtaria(idade) {
+    let faixa;
+    if (idade <= 12) {
+        faixa = "Criança";
+    } else if (idade <= 18) {
+        faixa = "Adolescente";
+    } else if (idade <= 60) {
+        faixa = "Adulto";
+    } else {
+        faixa = "Idoso";
+    }
+    return `Idade: ${idade} - Faixa etária: ${faixa}`;
+}
+
+// Exemplo utilizado na saida foi 25 anos
+console.log(verificarFaixaEtaria(25))
+
+
+
+
+
+
+
+
+
+
+
 
 
